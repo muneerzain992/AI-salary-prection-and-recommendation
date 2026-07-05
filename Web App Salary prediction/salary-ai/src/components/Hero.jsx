@@ -10,7 +10,8 @@ import {
 function Hero() {
   return (
     <section className="section pt-36">
-      <div className="container-custom grid lg:grid-cols-2 gap-14 items-center">
+
+<section id="home" className="gradient pt-40 pb-32"></section>      <div className="container-custom grid lg:grid-cols-2 gap-1 items-center">
 
         <motion.div
           initial={{opacity:0,x:-50}}

@@ -182,3 +182,25 @@
     border-right-color: var(--border);
   }
 }
+.container-custom {
+  max-width: 1400px;
+  margin: auto;
+  padding: 0 40px;
+}
+
+.section {
+  padding: 140px 0;
+}
+
+.card {
+  padding: 32px;
+  border-radius: 24px;
+}
+
+.hero-grid {
+  gap: 6rem;
+}
+
+.dashboard-grid {
+  gap: 2rem;
+}

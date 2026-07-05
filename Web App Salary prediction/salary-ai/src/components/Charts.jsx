@@ -45,11 +45,12 @@ const COLORS = [
 
 function Charts() {
   return (
+    
     <div className="grid lg:grid-cols-2 gap-8">
-
+  <section id="insights" className="section"></section>
       {/* Experience */}
 
-      <div className="card p-6">
+      <div className="card p-8">
 
         <h3 className="text-2xl font-bold text-primary mb-6">
           Salary by Experience

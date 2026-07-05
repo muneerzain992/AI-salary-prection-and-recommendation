@@ -10,6 +10,7 @@ import {
 function EmployerSection() {
   return (
     <section className="section bg-white">
+      <section id="employer" className="section"></section>
 
       <div className="container-custom grid lg:grid-cols-2 gap-14 items-center">
 

@@ -9,7 +9,7 @@ import {
 
 function JobSeekerSection() {
   return (
-    <section className="section bg-section">
+    <section id="job-seeker" className="section">
       <div className="container-custom grid lg:grid-cols-2 gap-14 items-center">
 
         <motion.div

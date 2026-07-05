@@ -26,6 +26,7 @@ function AboutSection() {
 
   return (
     <section className="section bg-white">
+      <section id="about" className="section"></section>
       <div className="container-custom">
 
         <div className="text-center mb-16">
