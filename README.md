@@ -1,2 +1,13 @@
-# AI-salary-prection-and-recommendation
-# 💼 AI Salary Prediction System  **AI Salary Prediction System** is an end-to-end Machine Learning project that predicts employee salaries based on professional and job-related attributes. The system helps **job seekers**, **recruiters**, and **organizations** estimate competitive salaries using historical salary data and predictive analytics.  Th
+# 💼 AI Salary Prediction System
+
+**AI Salary Prediction System** is an end-to-end Machine Learning project that predicts employee salaries based on professional and job-related attributes. The system helps **job seekers**, **recruiters**, and **organizations** estimate competitive salaries using historical salary data and predictive analytics.
+
+The model analyzes multiple factors, including **job title, years of experience, education level, industry, company size, work location, remote work status, certifications, and skills count**, to generate accurate salary predictions. It compares the performance of several regression algorithms, including **Linear Regression, Ridge Regression, Lasso Regression, Decision Tree, Random Forest, Gradient Boosting, XGBoost, LightGBM, CatBoost, Support Vector Regression (SVR), K-Nearest Neighbors (KNN), Extra Trees, and AdaBoost**, selecting the best-performing model based on evaluation metrics such as **R² Score, MAE, MSE, RMSE, and Cross-Validation Score**.
+
+The project follows a complete industry-standard machine learning workflow, beginning with **data cleaning, preprocessing, exploratory data analysis (EDA), feature engineering, feature encoding, model training, hyperparameter tuning, evaluation, and deployment**. During preprocessing, the dataset is cleaned by handling missing values, removing duplicates, standardizing categorical features, validating numerical values, and preparing the data for training.
+
+In addition to salary prediction, the system provides valuable analytics through interactive visualizations, including **salary distribution, experience vs. salary trends, education-wise salary comparison, industry analysis, company size insights, and location-based salary comparisons**. These visualizations help users better understand salary patterns and the factors influencing compensation.
+
+The final model is deployed as an interactive web application using **Streamlit**, allowing users to enter their professional details and instantly receive an estimated salary, expected salary range, market comparison, and confidence score. The project is built using **Python, Pandas, NumPy, Scikit-learn, XGBoost, LightGBM, CatBoost, Matplotlib, Plotly, and Joblib**, demonstrating practical experience in machine learning, predictive analytics, data visualization, model evaluation, and deployment.
+
+This project serves as a comprehensive portfolio demonstrating end-to-end machine learning development, regression modeling, explainable AI concepts, and real-world salary prediction for HR analytics, recruitment planning, compensation benchmarking, and career decision-making.
