@@ -179,7 +179,7 @@ function PredictionForm() {
           </h3>
 
           <p className="text-5xl font-extrabold mt-4 text-[#0F5132]">
-            SAR {prediction.toLocaleString()}
+            INR {prediction.toLocaleString()}
           </p>
 
           <p className="mt-3 text-gray-600">

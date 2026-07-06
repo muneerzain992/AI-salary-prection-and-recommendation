@@ -18,70 +18,79 @@ import Footer from "../components/Footer";
 function Home() {
   return (
     <>
-      {/* Navigation */}
+      {/* Navbar */}
       <Navbar />
 
-      {/* Hero Section */}
-      <Hero />
+      {/* Hero */}
+      <section id="home" className="scroll-mt-24">
+        <Hero />
+      </section>
 
       {/* Statistics */}
-      <Statistics />
+      <section id="statistics" className="scroll-mt-24">
+        <Statistics />
+      </section>
 
       {/* Features */}
-      <Features />
+      <section id="features" className="scroll-mt-24">
+        <Features />
+      </section>
 
-      {/* Job Seeker Section */}
-      <JobSeekerSection />
+      {/* Job Seeker */}
+      <section id="job-seeker" className="scroll-mt-24">
+        <JobSeekerSection />
+      </section>
 
-      {/* Employer Section */}
-      <EmployerSection />
+      {/* Employer */}
+      <section id="employer" className="scroll-mt-24">
+        <EmployerSection />
+      </section>
 
-      {/* Salary Prediction Section */}
-      <section className="section bg-gray-50">
-        <div className="container-custom">
-          <div className="text-center mb-12">
-            <span className="text-primary font-semibold uppercase">
-              AI Salary Prediction
-            </span>
-
-            <h2 className="text-4xl font-bold mt-4">
-              Predict Your Expected Salary
-            </h2>
-
-            <p className="subtitle max-w-3xl mx-auto">
-              Enter your professional details and let our Machine Learning
-              model estimate your expected salary based on industry trends,
-              experience, education, and job market data.
-            </p>
-          </div>
-
-          <div className="grid lg:grid-cols-2 gap-10">
-            <PredictionForm />
-            <ResultCard />
-          </div>
+      {/* Salary Prediction */}
+      <section
+        id="predict"
+        className="section bg-gray-50 scroll-mt-24"
+      >
+        <div className="container-custom grid lg:grid-cols-2 gap-10 items-start">
+          <PredictionForm />
+          <ResultCard />
         </div>
       </section>
 
       {/* How It Works */}
-      <HowItWorks />
+      <section id="how-it-works" className="scroll-mt-24">
+        <HowItWorks />
+      </section>
 
-      {/* Salary Charts */}
-      <Charts />
+      {/* Salary Insights */}
+      <section id="insights" className="scroll-mt-24">
+        <Charts />
+      </section>
 
-      {/* Analytics Dashboard */}
-      <AnalyticsDashboard />
+      {/* Dashboard */}
+      <section id="dashboard" className="scroll-mt-24">
+        <AnalyticsDashboard />
+      </section>
 
       {/* About */}
-      <AboutSection />
+      <section id="about" className="scroll-mt-24">
+        <AboutSection />
+      </section>
 
       {/* Testimonials */}
-      <Testimonials />
+      <section id="testimonials" className="scroll-mt-24">
+        <Testimonials />
+      </section>
 
       {/* FAQ */}
-      <FAQ />
+      <section id="faq" className="scroll-mt-24">
+        <FAQ />
+      </section>
 
       {/* Contact */}
-      <Contact />
+      <section id="contact" className="scroll-mt-24">
+        <Contact />
+      </section>
 
       {/* Footer */}
       <Footer />

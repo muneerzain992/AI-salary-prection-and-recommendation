@@ -47,7 +47,7 @@ function Hero() {
 
               Predict Salary
 
-              <ArrowRight size={25}/>
+              <ArrowRight size={15}/>
 
             </button>
 
@@ -97,7 +97,7 @@ function Hero() {
 
               <h2 className="text-4xl font-bold text-primary">
 
-                98%
+                97%
 
               </h2>
 
