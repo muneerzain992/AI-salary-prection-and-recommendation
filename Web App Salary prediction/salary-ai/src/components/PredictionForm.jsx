@@ -2,21 +2,18 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import api from "../services/api";
 
-function PredictionForm() {
+function PredictionForm({ prediction, setPrediction, loading, setLoading }) {
   const [formData, setFormData] = useState({
-    job_title: "",
-    experience_years: "",
+    job_title: "Marketing Manager",
+    experience_years: "5",
     education_level: "Bachelor",
-    skills_count: "",
-    industry: "",
-    company_size: "",
-    location: "",
+    skills_count: "6",
+    industry: "Marketing",
+    company_size: "Large",
+    location: "Islamabad Pakistan",
     remote_work: "No",
-    certifications: "",
+    certifications: "5",
   });
-
-  const [prediction, setPrediction] = useState(null);
-  const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
     setFormData({
@@ -35,11 +32,9 @@ function PredictionForm() {
 
     try {
       const response = await api.post("/predict", formData);
-
       setPrediction(response.data.predicted_salary);
     } catch (error) {
       console.error(error);
-
       alert(
         error.response?.data?.error ||
           "Prediction Failed! Please check your backend."
@@ -167,26 +162,6 @@ function PredictionForm() {
           </button>
         </div>
       </form>
-
-      {prediction !== null && (
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          className="mt-8 bg-green-50 border border-green-300 rounded-2xl p-8 text-center"
-        >
-          <h3 className="text-2xl font-bold text-green-700">
-            Predicted Salary
-          </h3>
-
-          <p className="text-5xl font-extrabold mt-4 text-[#0F5132]">
-            INR {prediction.toLocaleString()}
-          </p>
-
-          <p className="mt-3 text-gray-600">
-            Estimated annual salary based on your profile.
-          </p>
-        </motion.div>
-      )}
     </motion.div>
   );
 }

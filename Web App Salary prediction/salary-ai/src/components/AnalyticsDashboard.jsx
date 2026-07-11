@@ -7,8 +7,6 @@ import {
   Award,
 } from "lucide-react";
 
-import Charts from "./Charts";
-
 function AnalyticsDashboard() {
 
   const cards = [
@@ -83,7 +81,7 @@ function AnalyticsDashboard() {
 
               <div
                 key={index}
-                className="card p-8 hover:scale-105 duration-300"
+                className="card p-8"
               >
 
                 <div className="flex justify-between items-center">
@@ -122,11 +120,7 @@ function AnalyticsDashboard() {
           })}
 
         </div>
-
-        <Charts/>
-
       </div>
-
     </section>
 
   );

@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import Statistics from "../components/Statistics";
@@ -14,10 +15,17 @@ import Testimonials from "../components/Testimonials";
 import FAQ from "../components/FAQ";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
+import Bubbles from "../components/Bubbles";
 
 function Home() {
+  const [prediction, setPrediction] = useState(null);
+  const [loading, setLoading] = useState(false);
+
   return (
     <>
+      {/* Background Animation */}
+      <Bubbles />
+
       {/* Navbar */}
       <Navbar />
 
@@ -49,11 +57,16 @@ function Home() {
       {/* Salary Prediction */}
       <section
         id="predict"
-        className="section bg-gray-50 scroll-mt-24"
+        className="section scroll-mt-24"
       >
-        <div className="container-custom grid lg:grid-cols-2 gap-10 items-start">
-          <PredictionForm />
-          <ResultCard />
+        <div className="container-custom grid lg:grid-cols-2 gap-10 items-start relative z-10">
+          <PredictionForm 
+            prediction={prediction} 
+            setPrediction={setPrediction} 
+            loading={loading} 
+            setLoading={setLoading} 
+          />
+          <ResultCard prediction={prediction} loading={loading} />
         </div>
       </section>
 

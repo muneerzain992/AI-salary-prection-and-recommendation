@@ -43,9 +43,7 @@ function Navbar() {
           className="flex items-center gap-3"
         >
           <div className="w-11 h-11 rounded-xl bg-[#0F5132] flex items-center justify-center">
-
-            <BriefcaseBusiness className="text-white" size={22} />
-
+            <span className="text-white font-bold text-lg">SI</span>
           </div>
 
           <div>

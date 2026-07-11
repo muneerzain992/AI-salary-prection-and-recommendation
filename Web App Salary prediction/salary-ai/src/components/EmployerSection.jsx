@@ -6,11 +6,11 @@ import {
   BadgeDollarSign,
   ArrowRight,
 } from "lucide-react";
+import { Link } from "react-scroll";
 
 function EmployerSection() {
   return (
-    <section className="section bg-white">
-      <section id="employer" className="section"></section>
+    <section className="section bg-white/60 backdrop-blur-sm relative z-10">
 
       <div className="container-custom grid lg:grid-cols-2 gap-14 items-center">
 
@@ -90,10 +90,16 @@ function EmployerSection() {
 
           </div>
 
-          <button className="primary-btn mt-10 flex items-center gap-2">
+          <Link 
+            to="features" 
+            smooth={true} 
+            duration={800} 
+            offset={-100}
+            className="primary-btn mt-10"
+          >
             Explore Employer Tools
             <ArrowRight size={18}/>
-          </button>
+          </Link>
 
         </motion.div>
 

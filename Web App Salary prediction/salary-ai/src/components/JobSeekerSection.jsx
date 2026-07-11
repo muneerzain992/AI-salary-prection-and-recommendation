@@ -6,6 +6,7 @@ import {
   Award,
   ArrowRight,
 } from "lucide-react";
+import { Link } from "react-scroll";
 
 function JobSeekerSection() {
   return (
@@ -57,10 +58,16 @@ function JobSeekerSection() {
 
           </div>
 
-          <button className="primary-btn mt-10 flex items-center gap-2">
+          <Link 
+            to="predict" 
+            smooth={true} 
+            duration={800} 
+            offset={-100}
+            className="primary-btn mt-10"
+          >
             Start Prediction
             <ArrowRight size={18}/>
-          </button>
+          </Link>
 
         </motion.div>
 
