@@ -23,15 +23,33 @@ function ResultCard({ prediction, loading }) {
         <DollarSign size={42} className="text-primary" />
       </div>
 
-      <div className="mt-10 text-center relative z-10">
-        <h1 className="text-6xl font-bold text-primary flex justify-center items-center h-20">
+      <div className="mt-8 text-center relative z-10">
+        <div className="text-6xl font-bold text-primary flex justify-center items-center min-h-[7rem]">
           {loading ? (
-            <Loader2 className="animate-spin" size={50} />
+            <div className="flex flex-col items-center justify-center gap-3">
+              <motion.div
+                animate={{ 
+                  rotate: [0, 360],
+                  x: [-35, 35, -35],
+                }}
+                transition={{ 
+                  rotate: { repeat: Infinity, duration: 1.2, ease: "linear" },
+                  x: { repeat: Infinity, duration: 2.4, ease: "easeInOut" }
+                }}
+                className="text-[3.5rem] leading-none inline-block drop-shadow-lg"
+                style={{ transformOrigin: "center center" }}
+              >
+                🐼
+              </motion.div>
+              <span className="text-xs font-bold tracking-widest text-[#0F5132]/60 uppercase animate-pulse">
+                Analyzing Market Data...
+              </span>
+            </div>
           ) : (
-            formattedSalary
+            <h1>{formattedSalary}</h1>
           )}
-        </h1>
-        <p className="mt-3 text-gray-500">
+        </div>
+        <p className="mt-2 text-gray-500 font-medium">
           Estimated Annual Salary
         </p>
       </div>
